@@ -16,16 +16,16 @@
     "vanilla"
   ],
   "author": {
-    "name": "Kodie Grantham",
-    "email": "kodie.grantham@gmail.com",
-    "url": "https://kodieg.com"
+    "name": "Five Fifteen",
+    "email": "hello@fivefifteen.com",
+    "url": "https://fivefifteen.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kodie/filebokz.git"
+    "url": "https://github.com/fivefifteen/filebokz.git"
   },
   "bugs": {
-    "url": "https://github.com/kodie/filebokz/issues"
+    "url": "https://github.com/fivefifteen/filebokz/issues"
   },
   "homepage": "https://filebokz.js.org",
   "license": "MIT",

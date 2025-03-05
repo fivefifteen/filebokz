@@ -2,6 +2,7 @@
   "name": "filebokz",
   "version": "0.1.3",
   "description": "A tiny, dependency-free, highly customizable and configurable, easy to use file input with some pretty sweet features.",
+  "type": "module",
   "keywords": [
     "box",
     "drag",
@@ -39,19 +40,19 @@
     "build": "npm run test && npm run build-css && npm run minify-css && npm run build-js && npm run minify-js",
     "build-css": "sass src:dist",
     "build-js": "rollup --config rollup.config.js",
-    "minify-css": "cleancss --batch ./dist/*[^.min].css --batch-suffix '.min' --output dist --source-map --with-rebase",
+    "minify-css": "cleancss --batch ./dist/*[!.min].css --batch-suffix '.min' --output dist --source-map --with-rebase",
     "minify-js": "uglifyjs dist/filebokz.js --comments /^!/ --compress --mangle --output dist/filebokz.min.js --source-map \"url='filebokz.min.js.map'\"",
     "test": "standard --env browser"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.16.4",
-    "@rollup/plugin-babel": "^5.3.0",
-    "clean-css-cli": "^5.3.3",
-    "core-js": "^3.19.2",
-    "rollup": "^2.60.2",
-    "sass": "^1.44.0",
-    "standard": "^16.0.4",
-    "uglify-js": "^3.10.4"
+    "@babel/preset-env": "^7.26.9",
+    "@rollup/plugin-babel": "^6.0.4",
+    "clean-css-cli": "^5.6.3",
+    "core-js": "^3.41.0",
+    "rollup": "^4.34.9",
+    "sass": "^1.85.1",
+    "standard": "^17.1.2",
+    "uglify-js": "^3.19.3"
   },
   "standard": {
     "ignore": [

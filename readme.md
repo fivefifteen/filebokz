@@ -1,18 +1,25 @@
-# filebokz
+<div align="center">
 
-[![npm package version](https://img.shields.io/npm/v/filebokz.svg?style=flat-square)](https://www.npmjs.com/package/filebokz)
-[![Travis build status](https://img.shields.io/travis/com/kodie/filebokz.svg?style=flat-square)](https://travis-ci.com/kodie/filebokz)
-[![npm package downloads](https://img.shields.io/npm/dt/filebokz.svg?style=flat-square)](https://www.npmjs.com/package/filebokz)
-[![code style](https://img.shields.io/badge/code_style-standard-yellow.svg?style=flat-square)](https://github.com/standard/standard)
-[![license](https://img.shields.io/github/license/kodie/filebokz.svg?style=flat-square)](license.md)
+  # FileBokz
 
-A tiny, dependency-free, highly customizable and configurable, easy to use file input with some pretty sweet features.
+  A tiny, dependency-free, highly customizable and configurable, easy to use file input with some pretty sweet features.
+
+  [![npm package version](https://img.shields.io/npm/v/filebokz.svg?style=flat-square)](https://www.npmjs.com/package/filebokz)
+  [![npm package downloads](https://img.shields.io/npm/dt/filebokz.svg?style=flat-square)](https://www.npmjs.com/package/filebokz)
+  [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/fivefifteen/filebokz?style=flat-square)](https://github.com/fivefifteen/filebokz)
+  [![code style](https://img.shields.io/badge/code_style-standard-yellow.svg?style=flat-square)](https://github.com/standard/standard)
+  [![license](https://img.shields.io/github/license/fivefifteen/filebokz.svg?style=flat-square)](license.md)
+
+  <a href="https://fivefifteen.com" target="_blank"><img src="./assets/fivefifteen.png" /><br /><b>A Five Fifteen Project</b></a>
+
+</div>
 
 
 # Features
 
 * Tiny (JS ~9kb + CSS ~1kb = ~10kb total minified [add an additional ~4kb if using the theme])
 * Zero dependencies
+* Wide Browser Support
 * Use as little (or as much) HTML markup as you want
 * Optional default CSS styling (which looks really cool)
 * Drag-and-drop
@@ -26,17 +33,6 @@ A tiny, dependency-free, highly customizable and configurable, easy to use file 
 * Pretty much everything is configurable and flexible
 
 
-## Browser Support
-
-| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>Safari | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari-ios/safari-ios_48x48.png" alt="iOS Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>iOS Safari | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/samsung-internet/samsung-internet_48x48.png" alt="Samsung" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>Samsung | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/opera/opera_48x48.png" alt="Opera" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>Opera |
-| --------- | --------- | --------- | --------- | --------- | --------- | --------- |
-| >=80 | >=50 | >=58 | >=11 | Yes* | Yes* | >=45
-
-*Not really sure about which exact versions that are supported currently
-
-Basically any browser version made after 2016 should work.
-
-
 ## Demo
 
 Visit https://filebokz.js.org
@@ -47,7 +43,7 @@ Visit https://filebokz.js.org
 
 ### Manual Download
 
-[Download the latest version of filebokz](https://github.com/kodie/filebokz/archive/refs/heads/main.zip) and then place the following HTML in your page's head element:
+[Download the latest version of FileBokz](https://github.com/fivefifteen/filebokz/archive/refs/heads/main.zip) and then place the following HTML in your page's head element:
 
 ```html
 <script type="text/javascript" src="dist/filebokz.min.js"></script>
@@ -60,14 +56,14 @@ Visit https://filebokz.js.org
 
 ### CDN (Courtesy of [jsDelivr](https://jsdelivr.com))
 
-Place the following HTML in your page's head element (check to make sure the version in the URLs are the version you want):
+Place the following HTML in your page's head element (check to make sure the version in the URLs is the version you want):
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kodie/filebokz@0.0.2/dist/filebokz.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kodie/filebokz@0.0.2/dist/filebokz.min.css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/fivefifteen/filebokz@0.2/dist/filebokz.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fivefifteen/filebokz@0.2/dist/filebokz.min.css" />
 
 <!--Optional theme-->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kodie/filebokz@0.0.2/dist/filebokz-theme.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fivefifteen/filebokz@0.2/dist/filebokz-theme.min.css" />
 ```
 
 
@@ -86,17 +82,17 @@ const filebokz = require('filebokz')
 ```
 
 
-### [GPM](https://github.com/itsahappymedium/gpm)
+### [Fetcher](https://github.com/fivefifteen/fetcher)
 
 ```
-gpm install kodie/filebokz --save
+fetcher install fivefifteen/filebokz --save
 ```
 
 
 ### [Bower](https://bower.io)
 
 ```
-bower install kodie/filebokz --save
+bower install fivefifteen/filebokz --save
 ```
 
 
@@ -120,7 +116,7 @@ bower install kodie/filebokz --save
 
 ### The `filebokz([elements], [applyClass])` Function
 
-Initiates filebokz.
+Initiates FileBokz.
 
 
 #### Parameters
@@ -298,7 +294,7 @@ The number of milliseconds after the `error-display-duration` before clearing ou
 
 ### error-display-duration
 
-The number of milliseconds before removing the `error` class from the filebokz after an error has occurred. (Defaults to `3000`)
+The number of milliseconds before removing the `error` class from the `filebokz` element after an error has occurred. (Defaults to `3000`)
 
 
 ### max-files
@@ -377,7 +373,7 @@ The URL of the file preview. This is what `{url}` is set to in the `content`, `c
 
 ## JavaScript
 
-The `file-added`, `file-removed`, and `error` events are fired to the containing filebokz element when described events happen.
+The `file-added`, `file-removed`, and `error` events are fired to the containing `filebokz` element when described events happen.
 
 
 ### Examples
@@ -401,17 +397,13 @@ fileElement.addEventListener('error', function (e) {
 
 ## Related
 
- - [hashjump](https://github.com/kodie/hashjump) - A tiny, dependency-free JavaScript module for handling anchor links and scrolling elements into view.
+ - [ColorTap](https://github.com/fivefifteen/colortap) - A tiny, dependency-free, color input field helper that utilizes the native color picker.
 
- - [growfield](https://github.com/kodie/growfield) - A tiny, dependency-free JavaScript module for making textarea elements grow with their content.
+ - [GrowField](https://github.com/fivefifteen/growfield) - A tiny, dependency-free JavaScript module for making textarea elements grow with their content.
 
- - [kloner](https://github.com/kodie/kloner) - A tiny, dependency-free JavaScript module for cloning/repeating elements.
+ - [HashJump](https://github.com/fivefifteen/hashjump) - A tiny, dependency-free JavaScript module for handling anchor links and scrolling elements into view.
 
- - [kolorfield](https://github.com/kodie/kolorfield) - A tiny, dependency-free, color input field helper that utilizes the native color picker.
-
- - [minitaur](https://github.com/kodie/minitaur) - The ultimate, dependency-free, easy to use, JavaScript plugin for creating and managing modals.
-
- - [peekfield](https://github.com/kodie/peekfield) - A dependency-free, easy to use, JavaScript plugin for hiding and showing fields.
+ - [Kloner](https://github.com/fivefifteen/kloner) - A tiny, dependency-free JavaScript module for cloning/repeating elements.
 
 
 ## License

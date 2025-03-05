@@ -1,6 +1,6 @@
 /*!
   filebokz v0.1.3 (https://filebokz.js.org)
-  by Kodie Grantham (https://kodieg.com)
+  by Five Fifteen (https://fivefifteen.com)
 */
 
 const filebokz = (elements, applyClass) => {

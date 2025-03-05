@@ -70,7 +70,7 @@ const filebokz = (elements, applyClass) => {
 
     filebokz.triggerEvent('error', fileBox, {
       errorMessage: message,
-      errorType: errorType
+      errorType
     })
   }
 

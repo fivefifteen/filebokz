@@ -1,5 +1,5 @@
 /*!
-  filebokz v0.1.3 (https://filebokz.js.org)
+  filebokz v0.2.0 (https://filebokz.js.org)
   by Five Fifteen (https://fivefifteen.com)
 */
 

@@ -1,19 +1,20 @@
 /*!
-  filebokz v0.1.3 (https://filebokz.js.org)
-  by Kodie Grantham (https://kodieg.com)
+  filebokz v0.2.0 (https://filebokz.js.org)
+  by Five Fifteen (https://fivefifteen.com)
 */
 .filebokz {
-  --bg-color: #eee;
-  --color: #5185b3;
+  --bg-color: #fff;
+  --color: #000;
   --drag-bg-color: #fff;
-  --error-color: #721c24;
+  --error-text-color: #721c24;
   --error-bg-color: #f8d7da;
   --hover-bg-color: var(--bg-color);
-  --file-bg-color: #dadada;
+  --file-bg-color: #000;
+  --file-text-color: #fff;
   --focus-bg-color: var(--drag-bg-color);
-  background-color: #eee;
+  background-color: #fff;
   background-color: var(--bg-color);
-  color: #5185b3;
+  color: #000;
   color: var(--color);
   margin: 1rem 0;
   padding: 0.5rem;
@@ -21,7 +22,7 @@
   transition: background-color 0.5s ease;
 }
 .filebokz:hover {
-  background-color: #eee;
+  background-color: #fff;
   background-color: var(--hover-bg-color);
 }
 .filebokz.in-focus {
@@ -38,7 +39,7 @@
 .filebokz.error .error-msg {
   animation: filebokz-fadeIn 0.25s 1 ease-in;
   color: #721c24;
-  color: var(--error-color);
+  color: var(--error-text-color);
   opacity: 0.85;
   visibility: visible;
 }
@@ -94,7 +95,7 @@
   animation: filebokz-dance 10s infinite linear;
 }
 .filebokz.is-draggable label::after {
-  background: linear-gradient(90deg, #5185b3 50%, transparent 50%), linear-gradient(0deg, #5185b3 50%, transparent 50%), linear-gradient(90deg, #5185b3 50%, transparent 50%), linear-gradient(0deg, #5185b3 50%, transparent 50%);
+  background: linear-gradient(90deg, #000 50%, transparent 50%), linear-gradient(0deg, #000 50%, transparent 50%), linear-gradient(90deg, #000 50%, transparent 50%), linear-gradient(0deg, #000 50%, transparent 50%);
   background: linear-gradient(90deg, var(--color) 50%, transparent 50%), linear-gradient(0deg, var(--color) 50%, transparent 50%), linear-gradient(90deg, var(--color) 50%, transparent 50%), linear-gradient(0deg, var(--color) 50%, transparent 50%);
   background-repeat: repeat-x, repeat-y, repeat-x, repeat-y;
   background-size: 15px 3px, 3px 15px, 15px 3px, 3px 15px;
@@ -124,7 +125,7 @@
 }
 .filebokz .files .file .remove:hover {
   color: #721c24;
-  color: var(--error-color);
+  color: var(--error-text-color);
 }
 .filebokz .files.file-previews {
   align-items: left;
@@ -133,12 +134,14 @@
 }
 .filebokz .files.file-previews .file {
   align-items: center;
-  background-color: #dadada;
+  background-color: #000;
   background-color: var(--file-bg-color);
-  border-color: #5185b3;
+  border-color: #000;
   border-color: var(--color);
   border-style: dotted;
   border-width: 1px;
+  color: #fff;
+  color: var(--file-text-color);
   flex-basis: 30%;
   justify-content: center;
   margin: 1rem;
@@ -157,6 +160,10 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.filebokz .files.file-previews .file img {
+  background-color: #fff;
+  background-color: var(--bg-color);
 }
 .filebokz .files.file-previews .file img, .filebokz .files.file-previews .file i.fa {
   font-size: 80px;

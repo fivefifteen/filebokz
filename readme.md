@@ -1,5 +1,12 @@
 <div align="center">
 
+  <a href="https://github.com/fivefifteen/filebokz">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./assets/filebokz-white.png">
+      <img src="./assets/filebokz.png" alt="FileBokz">
+    </picture>
+  </a>
+
   # FileBokz
 
   A tiny, dependency-free, highly customizable and configurable, easy to use file input with some pretty sweet features.

@@ -3,23 +3,25 @@
   by Five Fifteen (https://fivefifteen.com)
 */
 
-$filebokz-bg-color: #eee !default;
-$filebokz-color: #5185b3 !default;
-$filebokz-drag-bg-color: #fff !default;
-$filebokz-error-color: #721c24 !default;
+$filebokz-bg-color: #fff !default;
+$filebokz-color: #000 !default;
+$filebokz-drag-bg-color: $filebokz-bg-color !default;
+$filebokz-error-text-color: #721c24 !default;
 $filebokz-error-bg-color: #f8d7da !default;
-$filebokz-hover-bg-color: #eee !default;
-$filebokz-file-bg-color: #dadada !default;
-$filebokz-focus-bg-color: #fff !default;
+$filebokz-hover-bg-color: $filebokz-bg-color !default;
+$filebokz-file-bg-color: $filebokz-color !default;
+$filebokz-file-text-color: $filebokz-bg-color !default;
+$filebokz-focus-bg-color: $filebokz-bg-color !default;
 
 .filebokz {
   --bg-color: #{$filebokz-bg-color};
   --color: #{$filebokz-color};
   --drag-bg-color: #{$filebokz-drag-bg-color};
-  --error-color: #{$filebokz-error-color};
+  --error-text-color: #{$filebokz-error-text-color};
   --error-bg-color: #{$filebokz-error-bg-color};
   --hover-bg-color: var(--bg-color);
   --file-bg-color: #{$filebokz-file-bg-color};
+  --file-text-color: #{$filebokz-file-text-color};
   --focus-bg-color: var(--drag-bg-color);
 
   background-color: $filebokz-bg-color;
@@ -52,8 +54,8 @@ $filebokz-focus-bg-color: #fff !default;
 
   &.error .error-msg {
     animation: filebokz-fadeIn .25s 1 ease-in;
-    color: $filebokz-error-color;
-    color: var(--error-color);
+    color: $filebokz-error-text-color;
+    color: var(--error-text-color);
     opacity: .85;
     visibility: visible;
   }
@@ -166,8 +168,8 @@ $filebokz-focus-bg-color: #fff !default;
       }
 
       .remove:hover {
-        color: $filebokz-error-color;
-        color: var(--error-color);
+        color: $filebokz-error-text-color;
+        color: var(--error-text-color);
       }
     }
 
@@ -184,6 +186,8 @@ $filebokz-focus-bg-color: #fff !default;
         border-color: var(--color);
         border-style: dotted;
         border-width: 1px;
+        color: $filebokz-file-text-color;
+        color: var(--file-text-color);
         flex-basis: 30%;
         justify-content: center;
         margin: 1rem;
@@ -203,6 +207,11 @@ $filebokz-focus-bg-color: #fff !default;
           overflow: hidden;
           text-overflow: ellipsis;
           white-space: nowrap;
+        }
+
+        img {
+          background-color: $filebokz-bg-color;
+          background-color: var(--bg-color);
         }
 
         img, i.fa {
